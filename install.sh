@@ -2,11 +2,13 @@
 
 yum install -y telnet vim nginx
 
-cp nogfw* /etc/nginx
+expect set_password
+
+mv nogfw* /etc/nginx/
 
 cp default.conf /etc/nginx/conf.d/
 
 chkconfig nginx on
 
-service nginx start
+service nginx restart
 
