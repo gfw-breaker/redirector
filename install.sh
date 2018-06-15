@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yum install -y telnet vim nginx
+yum install -y telnet vim nginx expect
 
 expect set_password
 
